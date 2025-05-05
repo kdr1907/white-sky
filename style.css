@@ -1,0 +1,70 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #444;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #fff;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #aaa;
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #ffcc00;
+}
+
+.world, .karakter {
+    margin-bottom: 1.5rem;
+}
+
+blockquote {
+    border-left: 3px solid #888;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #ccc;
+    margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #444;
+    padding: 1rem 0;
+}
