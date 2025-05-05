@@ -10,12 +10,12 @@ body {
 
 header {
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     border-bottom: 1px solid #444;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 0;
     color: #fff;
 }
@@ -24,12 +24,13 @@ h1 {
     font-style: italic;
     color: #aaa;
     margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 main {
     max-width: 800px;
     margin: auto;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 section {
@@ -37,7 +38,7 @@ section {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border-bottom: 2px solid #555;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
@@ -45,7 +46,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #ffcc00;
 }
 
@@ -63,8 +64,31 @@ blockquote {
 
 footer {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #777;
     border-top: 1px solid #444;
     padding: 1rem 0;
+}
+
+/* Mobil cihazlar için uyarlama */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    body {
+        padding: 0 0.5rem;
+    }
+
+    header, main {
+        padding: 1.5rem 0.5rem;
+    }
 }
