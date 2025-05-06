@@ -1,94 +1,144 @@
-/* Genel stil ayarları */
+/* Arka planı koyu yapmak için düzenlemeler */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0 1rem;
-    line-height: 1.6;
+    padding: 0;
+    background-color: #1e1e1e; /* Koyu gri arka plan */
+    color: white; /* Metin rengini beyaz yapalım */
 }
 
+/* Header arka planını koyu yapalım */
 header {
+    background-color: #111; /* Daha koyu bir gri/siyah ton */
+    color: white;
+    padding: 10px 20px;
     text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 1px solid #444;
+    background: linear-gradient(to right, #111, #222);
 }
 
 h1 {
-    font-size: 2.2rem;
     margin: 0;
-    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Başlık için hafif gölge */
 }
 
-.subtitle {
-    font-style: italic;
-    color: #aaa;
-    margin-top: 0.5rem;
-    font-size: 1rem;
+/* Navigasyon menüsünü stilize edelim */
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem 1rem;
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #f0a500; /* Hover rengi */
+    text-decoration: underline;
+}
+
+/* Bölüm başlıklarını ve paragrafları stilize edelim */
 section {
-    margin-bottom: 2.5rem;
+    padding: 20px;
+    margin: 20px;
+    background-color: #2a2a2a; /* Koyu gri arka plan */
+    border-radius: 8px; /* Köşe yuvarlama */
 }
 
 h2 {
-    font-size: 1.5rem;
-    border-bottom: 2px solid #555;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    color: #f0f0f0;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Bölüm başlıkları için hafif gölge */
 }
 
 h3 {
-    font-size: 1.2rem;
-    color: #ffcc00;
+    font-size: 1.5rem;
+    color: #f0a500; /* Başlıkları vurgulamak için turuncu ton */
 }
 
-.world, .karakter {
-    margin-bottom: 1.5rem;
+p {
+    color: #ddd; /* Hafif gri metin rengi */
+    line-height: 1.8; /* Satır aralığını artırarak okuma kolaylığı sağla */
+    margin-bottom: 15px; /* Paragraflar arasında biraz boşluk */
 }
 
 blockquote {
-    border-left: 3px solid #888;
-    padding-left: 1rem;
     font-style: italic;
-    color: #ccc;
-    margin-top: 0.5rem;
+    color: #bbb; /* Alıntı metin rengini biraz daha açık yapalım */
+    margin-top: 10px;
+    margin-bottom: 20px; /* Alıntılar arasına boşluk ekleyelim */
 }
 
+/* Linkleri daha dikkat çekici hale getirelim */
+a {
+    color: #f0a500;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #f0c500; /* Hover rengi */
+    background-color: rgba(240, 165, 0, 0.2); /* Hover sırasında hafif arka plan rengi */
+}
+
+/* Footer stilini ekleyelim */
 footer {
+    background-color: #111; /* Footer arka planı koyu */
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    font-size: 0.8rem;
-    color: #777;
-    border-top: 1px solid #444;
-    padding: 1rem 0;
+    margin-top: 20px; /* Footer'a biraz boşluk ekleyelim */
+}
+/* Navigasyon bağlantılarını düzenleyelim */
+.navigation {
+    display: flex;
+    justify-content: space-between; /* Sol ve sağa yerleştirir */
+    margin-top: 20px;
 }
 
-/* Mobil cihazlar için uyarlama */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-    }
-
-    body {
-        padding: 0 0.5rem;
-    }
-
-    header, main {
-        padding: 1.5rem 0.5rem;
-    }
+.navigation a {
+    background-color: #f0a500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
+
+.navigation a:hover {
+    background-color: #f0c500;
+}
+
+.navigation a:active {
+    background-color: #e08900;
+}
+/* Anasayfa butonu için stil */
+.home-button-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #444;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #f0a500;
+    color: black;
+    transform: translateY(-1px);
+}
+
+
