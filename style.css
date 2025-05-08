@@ -1,4 +1,10 @@
-/* Arka planı koyu yapmak için düzenlemeler */
+/* Temel sıfırlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -94,6 +100,7 @@ footer {
     text-align: center;
     margin-top: 20px; /* Footer'a biraz boşluk ekleyelim */
 }
+
 /* Navigasyon bağlantılarını düzenleyelim */
 .navigation {
     display: flex;
@@ -117,6 +124,7 @@ footer {
 .navigation a:active {
     background-color: #e08900;
 }
+
 /* Anasayfa butonu için stil */
 .home-button-wrapper {
     text-align: center;
@@ -141,4 +149,57 @@ footer {
     transform: translateY(-1px);
 }
 
+/* Mobil uyumluluk için düzenlemeler */
+@media (max-width: 768px) {
+    /* Header ve genel metin için küçültme */
+    h1 {
+        font-size: 2rem;
+    }
 
+    /* Navigasyon menüsünü dikey hale getirelim */
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Bölüm başlıklarını küçültme */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem; /* Metni küçük ekranlarda daha okunabilir yapalım */
+    }
+
+    /* Footer yazısını küçültme */
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    /* Anasayfa butonunu daha büyük hale getirelim */
+    .home-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    /* Navigasyon bağlantılarının font büyüklüğünü ayarlayalım */
+    .navigation a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    /* Section içeriği daha geniş görünmesi için düzenleme */
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+}
